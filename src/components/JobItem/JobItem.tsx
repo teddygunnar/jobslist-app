@@ -4,11 +4,9 @@ import { JobDetailI } from '../../modules/core/_model'
 import { Link } from 'react-router-dom';
 
 const JobItem = (props: JobDetailI) => {
+    //TEST
     const { title, location, company, created_at, type, id } = props;
     const dateParse = new Date(Date.parse(created_at));
-    // TEST CHERRY PICK COMMIT
-
-    //TEST CHERRY PICK COMMIT YANG KE-2
     return (
         <Link to={id}>
             <div className='border-t p-3 hover:bg-blue-500/10 cursor-pointer'>
