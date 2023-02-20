@@ -20,11 +20,6 @@ const List = () => {
         setDescription, location, setLocation, description, full_time, setFullTime
     }
 
-    // const { data: jobList, isLoading: jobListLoading } = useQuery(['jobs-list'], () => GetJobList(page), {
-    //     staleTime: 60000,
-    //     refetchOnWindowFocus: false,
-    // });
-
     const { data: jobList, hasNextPage, fetchNextPage, isFetching, isFetchingNextPage } = useInfiniteQuery("jobItems", GetJobList, {
         getNextPageParam: (_, pages) => {
             if (pages?.length < 2) {
