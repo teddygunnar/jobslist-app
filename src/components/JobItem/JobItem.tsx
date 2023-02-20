@@ -4,6 +4,7 @@ import { JobDetailI } from '../../modules/core/_model'
 import { Link } from 'react-router-dom';
 
 const JobItem = (props: JobDetailI) => {
+    //TEST
     const { title, location, company, created_at, type, id } = props;
     const dateParse = new Date(Date.parse(created_at));
     return (
