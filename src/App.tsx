@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './routes/AppRoutes';
 
 const App = () => {
+    //TEST CHERRY PICK COMMIT YANG KE-2
     const queryClient = new QueryClient({
         defaultOptions: {
             queries: {
